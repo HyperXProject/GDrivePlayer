@@ -61,6 +61,8 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 			autostart: false,	
 			width: '100%',
 			aspectratio: '16:9',
+			flashplayer: "/_layouts/mediaplayer2/player.swf",
+                        skin: "/_layouts/mediaplayer2/glow.zip",	
 		});
 	</script>
 
