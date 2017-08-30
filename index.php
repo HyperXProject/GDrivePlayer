@@ -37,6 +37,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 	</style>
 
 	<div class="container">
+		<center>GDrivePlayer - Priv8 Embed</center>
 		<br />
 		<form action="" method="POST">
 			<input type="text" size="80" name="url" value="https://drive.google.com/file/d/0ByaRd0R0Qyatcmw2dVhQS0NDU0U/view"/>
@@ -54,7 +55,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 	<script type="text/javascript">
 		jwplayer("myElement").setup({
 			playlist: [{
-				"sources":<?php //echo $file?>
+				"sources":<?php echo $file?>
 			}],
 			allowfullscreen: true,
 			width: '100%',
