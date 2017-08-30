@@ -23,7 +23,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-	<title>Embed google drive generator</title>
+	<title>GDrivePlayer - Priv8</title>
 </head>
 <body>
 
@@ -37,7 +37,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 	</style>
 
 	<div class="container">
-		<center>GDrivePlayer - Priv8 Embed</center>
+		<center><h1>GDrivePlayer - Priv8 Embed</h1></center>
 		<br />
 		<form action="" method="POST">
 			<input type="text" size="80" name="url" value="https://drive.google.com/file/d/0ByaRd0R0Qyatcmw2dVhQS0NDU0U/view"/>
@@ -47,7 +47,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 
 		<div id="myElement">Paste the url and click the get button.</div>
 
-		<div><?php if($iframeid){echo '<textarea style="margin:10px;width: 97%;height: 80px;">&lt;iframe src="gdriveplayer.herokuapp.com/embed.php?url='.$iframeid.'" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen&gt;&lt;/iframe&gt;</textarea>';}?></div>
+		<div><?php if($iframeid){echo 'gdriveplayer.herokuapp.com/embed.php?url='.$iframeid.';}?></div>
 
 	</div>
 
