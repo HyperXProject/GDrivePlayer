@@ -47,7 +47,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 
 		<div id="myElement">Paste the url and click the get button.</div>
 
-		<div><?php if($iframeid){echo '<textarea style="margin:10px;width: 97%;height: 80px;">gdriveplayer.herokuapp.com/embed.php?url='.$iframeid.'</textarea>';}?></div>
+		<div><?php if($iframeid){echo '<textarea style="margin:10px;width: 97%;height: 80px;">http://gdriveplayer.herokuapp.com/embed.php?url='.$iframeid.'</textarea>';}?></div>
 
 	</div>
 
