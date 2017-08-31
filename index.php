@@ -23,7 +23,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-	<title>GDrivePlayer - Priv8</title>
+	<title>GDrivePlayer - Priv8 Embed</title>
 </head>
 <body>
 
@@ -41,11 +41,11 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 		<br />
 		<form action="" method="POST">
 			<input type="text" size="80" name="url" value="https://drive.google.com/file/d/0ByaRd0R0Qyatcmw2dVhQS0NDU0U/view"/>
-			<input type="submit" value="GET" name="submit" />
+			<input type="submit" value="Generate" name="submit" />
 		</form>
 		<br/>
 
-		<div id="myElement">Paste the url and click the get button.</div>
+		<div id="myElement">Paste the url and click the generate button.</div>
 
 		<div><?php if($iframeid){echo '<textarea style="margin:10px;width: 97%;height: 80px;">http://gdriveplayer.herokuapp.com/embed.php?url='.$iframeid.'</textarea>';}?></div>
 
@@ -65,6 +65,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 	</script>
         <br><br>
 	<center><h4>By Haznini Armita | Since 2017</h4></center>
+	<center><h4>We Do Not Host And Upload Any Video</h4></center>
 </body>
 </html>
 
