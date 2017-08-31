@@ -63,7 +63,8 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 			aspectratio: '16:9',			
 		});
 	</script>
-
+        <br><br>
+	<center><h4>By Haznini Armita | Since 2017</h4></center>
 </body>
 </html>
 
