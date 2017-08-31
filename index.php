@@ -54,7 +54,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 	<script src="https://content.jwplatform.com/libraries/DbXZPMBQ.js"></script>
 	<script type="text/javascript">
 		var player = jwplayer('player');
-		jwplayer("myElement").setup({
+		player("myElement").setup({
 			playlist: [{
 				"sources":<?php echo $file?>
 			}],
