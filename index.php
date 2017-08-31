@@ -62,6 +62,21 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 			width: '100%',
 			aspectratio: '16:9',			
 		});
+		
+		player.addButton(
+                //This portion is what designates the graphic used for the button
+                "//icons.jwplayer.com/icons/white/download.svg",
+                //This portion determines the text that appears as a tooltip
+                "Download Video",
+                //This portion designates the functionality of the button itself
+                function() {
+                //With the below code, we're grabbing the file that's currently playing
+                window.location.href = player.getPlaylistItem()['sources'];
+                },
+                //And finally, here we set the unique ID of the button itself.
+                "download"
+                );		   
+				   
 	</script>
         <br><br>
 	<center><h4>By Haznini Armita | Since 2017</h4></center>
