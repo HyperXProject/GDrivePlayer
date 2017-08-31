@@ -53,7 +53,6 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 
 	<script src="https://content.jwplatform.com/libraries/DbXZPMBQ.js"></script>
 	<script type="text/javascript">
-		var jwplayer = player('jwplayer');
 		jwplayer("myElement").setup({
 			playlist: [{
 				"sources":<?php echo $file?>
@@ -64,7 +63,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
 			aspectratio: '16:9',			
 		});
 		
-		jwplayer.addButton(
+		player.addButton(
                 //This portion is what designates the graphic used for the button
                 "//icons.jwplayer.com/icons/white/download.svg",
                 //This portion determines the text that appears as a tooltip
@@ -72,7 +71,7 @@ if (isset($_COOKIE['PrivatePageLogin'])) {
                 //This portion designates the functionality of the button itself
                 function() {
                 //With the below code, we're grabbing the file that's currently playing
-                window.location.href = jwplayer.getPlaylistItem()['sources'];
+                window.location.href = player.getPlaylistItem()['sources'];
                 },
                 //And finally, here we set the unique ID of the button itself.
                 "download"
